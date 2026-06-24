@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 225 25% 97%;
+    --card: 0 0% 4%;
+    --card-foreground: 225 25% 97%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 225 25% 97%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 0 0% 4%;
+    --secondary-foreground: 225 25% 97%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 54%;
+    --accent: 168 76% 50%;
+    --accent-foreground: 0 0% 2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 158 64% 52%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 225 25% 97%;
+    --sidebar-primary: 158 64% 52%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 225 25% 97%;
+    --sidebar-border: 0 0% 10%;
+    --sidebar-ring: 158 64% 52%;
+  }
+
+  .dark {
+    --background: 0 0% 2%;
+    --foreground: 225 25% 97%;
+    --card: 0 0% 4%;
+    --card-foreground: 225 25% 97%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 225 25% 97%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 0 0% 4%;
+    --secondary-foreground: 225 25% 97%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 54%;
+    --accent: 168 76% 50%;
+    --accent-foreground: 0 0% 2%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 10%;
+    --input: 0 0% 10%;
+    --ring: 158 64% 52%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 225 25% 97%;
+    --sidebar-primary: 158 64% 52%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 225 25% 97%;
+    --sidebar-border: 0 0% 10%;
+    --sidebar-ring: 158 64% 52%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-deep-black text-text-primary antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    @apply border-border-subtle;
+  }
+
+  ::selection {
+    background-color: rgba(52, 211, 153, 0.3);
+    color: #f1f5fb;
+  }
+}
